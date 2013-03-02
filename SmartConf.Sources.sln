@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine.Sample", "Comma
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandLine", "CommandLine", "{4812F362-4C93-4F8D-A052-4745FE7CDF00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment", "Environment\Environment.csproj", "{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment.UnitTest", "Environment.UnitTest\Environment.UnitTest.csproj", "{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +27,14 @@ Global
 		{6E780F43-148E-4144-8264-EDBC2C5D17CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E780F43-148E-4144-8264-EDBC2C5D17CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E780F43-148E-4144-8264-EDBC2C5D17CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -28,5 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6E780F43-148E-4144-8264-EDBC2C5D17CD} = {4812F362-4C93-4F8D-A052-4745FE7CDF00}
 		{5E679CA2-6678-4D4B-9864-F5A4FA41CE7B} = {4812F362-4C93-4F8D-A052-4745FE7CDF00}
+		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC} = {56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}
+		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0} = {56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}
 	EndGlobalSection
 EndGlobal
