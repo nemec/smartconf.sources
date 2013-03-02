@@ -9,11 +9,11 @@ namespace SmartConf.Sources
     public class CommandLineConfigurationSource<T> : IConfigurationSource<T> where T : class, new()
     {
         public CommandLineConfigurationSource(string[] args)
-            : this(args, CommandLineParser.Default)
+            : this(args, Parser.Default)
         {
         } 
 
-        public CommandLineConfigurationSource(string[] args, ICommandLineParser parser)
+        public CommandLineConfigurationSource(string[] args, Parser parser)
         {
             Config = new T();
             if (!parser.ParseArguments(args, Config))
@@ -39,5 +39,13 @@ namespace SmartConf.Sources
         {
             PartialSave(obj, null);
         }
+
+
+        public bool ReadOnly
+        {
+            get { return true; }
+        }
+
+        public bool Required { get; set; }
     }
 }

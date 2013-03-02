@@ -5,12 +5,12 @@ namespace SmartConf.Sources.CommandLine.Sample
 {
     public class Program
     {
-        public class Config : CommandLineOptionsBase
+        public class Config
         {
-            [Option("c", null, DefaultValue = "settings1.xml")]
+            [Option('c', null, DefaultValue = "settings1.xml")]
             public string ConfigFile { get; set; }
 
-            [Option("n", null)]
+            [Option('n', null)]
             public string Name { get; set; }
 
             public int Age { get; set; }
