@@ -1,7 +1,7 @@
 smartconf.sources.commandline
 =============================
 
-Implements a custom smartconf ConfigurationSource that integrates
+Implements a custom [smartconf](https://github.com/nemec/smartconf) ConfigurationSource that integrates
 command line arguments parsed by the [commandline](https://github.com/gsscoder/commandline)
 library into the configuration pipeline.
 
