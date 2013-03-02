@@ -1,5 +1,7 @@
 My custom smartconf sources
 ===========================
 
-[commandline](./commandline)
-[environment](./environment)
+See inside each root library folder for individual README.
+
+* CommandLine
+* Environment
