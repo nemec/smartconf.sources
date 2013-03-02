@@ -12,8 +12,14 @@ namespace SmartConf.Sources.Environment
     [AttributeUsage(AttributeTargets.Property)]
     public class EnvironmentVariableAttribute : Attribute
     {
+        /// <summary>
+        /// Environment variable name.
+        /// </summary>
         public string VariableName { get; private set; }
 
+        /// <summary>
+        /// Optional location where environment variable is stored.
+        /// </summary>
         public EnvironmentVariableTarget? Target { get; private set; }
 
         /// <summary>

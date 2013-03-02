@@ -8,6 +8,10 @@ using System.Reflection;
 namespace SmartConf.Sources.Environment
 // ReSharper restore CheckNamespace
 {
+    /// <summary>
+    /// Configuration source for pulling in Environment Variables.
+    /// </summary>
+    /// <typeparam name="T">Configuration object type.</typeparam>
     public class EnvironmentConfigurationSource<T> : IConfigurationSource<T> where T : class, new()
     {
         /// <summary>
@@ -26,12 +30,15 @@ namespace SmartConf.Sources.Environment
 
         private T _config;
 
+        /// <summary>
+        /// Parsed configuration object.
+        /// </summary>
         public T Config
         {
             get { return _config ?? (_config = CreateConfig()); }
         }
 
-        public T CreateConfig()
+        private T CreateConfig()
         {
             var obj = new T();
 
@@ -75,11 +82,23 @@ namespace SmartConf.Sources.Environment
             return obj;
         }
 
+        /// <summary>
+        /// Mark this configuration source as invalidated. The next time
+        /// the configuration object is requested, re-check all environment
+        /// variables and parse their values.
+        /// </summary>
         public void Invalidate()
         {
             _config = null;
         }
 
+        /// <summary>
+        /// For each property in <paramref name="propertyNames"/> with an
+        /// <see cref="EnvironmentVariableAttribute"/>, set the environment
+        /// variable for that property with the property's value.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <param name="propertyNames"></param>
         public void PartialSave(T obj, IEnumerable<string> propertyNames)
         {
             var props = typeof (T).GetProperties()
@@ -106,15 +125,30 @@ namespace SmartConf.Sources.Environment
             }
         }
 
+        /// <summary>
+        /// Mark this configuration source as the one that gets saved by default.
+        /// </summary>
         public bool PrimarySource { get; set; }
 
+        /// <summary>
+        /// This configuration source is not read only.
+        /// </summary>
         public bool ReadOnly
         {
             get { return false; }
         }
 
+        /// <summary>
+        /// Mark this configuration source as required.
+        /// </summary>
         public bool Required { get; set; }
 
+        /// <summary>
+        /// Save all properties with an
+        /// <see cref="EnvironmentVariableAttribute"/> and set the environment
+        /// variable for that property with the property's value.
+        /// </summary>
+        /// <param name="obj"></param>
         public void Save(T obj)
         {
             PartialSave(obj, null);

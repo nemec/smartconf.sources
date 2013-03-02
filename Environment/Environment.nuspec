@@ -4,7 +4,7 @@
     <id>smartconf.sources.environment</id>
     <authors>Dan Nemec</authors>
     <owners>Dan Nemec</owners>
-    <version>0.9.0.0</version>
+    <version>0.9.0.2</version>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <projectUrl>https://github.com/nemec/smartconf.sources</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

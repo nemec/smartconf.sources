@@ -5,6 +5,8 @@ Implements a custom [smartconf](https://github.com/nemec/smartconf) Configuratio
 command line arguments parsed by the [commandline](https://github.com/gsscoder/commandline)
 library into the configuration pipeline.
 
+We're on [NuGet](https://nuget.org/packages/smartconf.sources.commandline/)!
+
 If this source is specified as the last source in the list and a previous source 
 has its PrimarySource value set to `true`, the values parsed will take priority over
 any other configuration source, but will not be factored in when determining which
