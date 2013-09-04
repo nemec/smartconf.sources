@@ -16,7 +16,6 @@ Options class:
     public class Options
     {
         [EnvironmentVariable("INPUT_FILE")]
-        [Option('r', "read", HelpText = "Input file to be processed.")]
         public string InputFile { get; set; }
     }
 
