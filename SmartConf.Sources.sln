@@ -6,12 +6,30 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine.Sample", "CommandLine.Sample\CommandLine.Sample.csproj", "{6E780F43-148E-4144-8264-EDBC2C5D17CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandLine", "CommandLine", "{4812F362-4C93-4F8D-A052-4745FE7CDF00}"
+	ProjectSection(SolutionItems) = preProject
+		CommandLine\CommandLine.nuspec = CommandLine\CommandLine.nuspec
+		CommandLine\README.md = CommandLine\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Environment", "Environment", "{56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}"
+	ProjectSection(SolutionItems) = preProject
+		Environment\Environment.nuspec = Environment\Environment.nuspec
+		Environment\README.md = Environment\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment", "Environment\Environment.csproj", "{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment.UnitTest", "Environment.UnitTest\Environment.UnitTest.csproj", "{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clipr", "Clipr", "{5DE26C0C-CAD5-47D6-BB38-2EB2D43C12B5}"
+	ProjectSection(SolutionItems) = preProject
+		clipr\clipr.nuspec = clipr\clipr.nuspec
+		clipr\README.md = clipr\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clipr", "clipr\clipr.csproj", "{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clipr.Sample", "clipr.Sample\clipr.Sample.csproj", "{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +53,14 @@ Global
 		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +70,7 @@ Global
 		{5E679CA2-6678-4D4B-9864-F5A4FA41CE7B} = {4812F362-4C93-4F8D-A052-4745FE7CDF00}
 		{3C9DDA40-7BF6-4E6C-9DE8-49B34C07FAAC} = {56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}
 		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0} = {56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}
+		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED} = {5DE26C0C-CAD5-47D6-BB38-2EB2D43C12B5}
+		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133} = {5DE26C0C-CAD5-47D6-BB38-2EB2D43C12B5}
 	EndGlobalSection
 EndGlobal

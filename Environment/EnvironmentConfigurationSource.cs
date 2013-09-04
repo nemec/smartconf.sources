@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Collections.Generic;
-using System.Reflection;
+using Environment;
 
 // ReSharper disable CheckNamespace
 namespace SmartConf.Sources.Environment
@@ -77,7 +77,7 @@ namespace SmartConf.Sources.Environment
                     continue;  // Don't attempt to set value.
                 }
 
-                prop.SetValue(obj, value);
+                prop.GetSetMethod().Invoke(obj, new []{value});
             }
             return obj;
         }
@@ -120,7 +120,7 @@ namespace SmartConf.Sources.Environment
 
                 System.Environment.SetEnvironmentVariable(
                     envVarName, 
-                    prop.GetValue(obj).ToString(),
+                    prop.GetGetMethod().Invoke(obj, null).ToString(),
                     attr.Target.GetValueOrDefault(GlobalTarget));
             }
         }

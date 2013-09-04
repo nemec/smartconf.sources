@@ -4,7 +4,7 @@
     <id>smartconf.sources.environment</id>
     <authors>Dan Nemec</authors>
     <owners>Dan Nemec</owners>
-    <version>0.9.0.2</version>
+    <version>0.9.1.0</version>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <projectUrl>https://github.com/nemec/smartconf.sources</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,6 +12,9 @@
       Environment variable source for smartconf.
       Visit https://github.com/nemec/smartconf.sources for more information.
     </description>
+    <releaseNotes>
+      2013-03-04 Retargeted for .Net 4.0
+    </releaseNotes>
     <copyright>Copyright 2012</copyright>
     <tags>.net40 .net35 config configuration environment</tags>
   </metadata>

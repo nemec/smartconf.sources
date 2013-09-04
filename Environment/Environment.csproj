@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Environment</RootNamespace>
     <AssemblyName>Environment</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="EnvironmentConfigurationSource.cs" />
     <Compile Include="EnvironmentVariableAttribute.cs" />
+    <Compile Include="Net45Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
