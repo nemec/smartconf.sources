@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using clipr;
 
-// ReSharper disable CheckNamespace
-namespace SmartConf.Sources
-// ReSharper restore CheckNamespace
+namespace SmartConf.Sources.clipr
 {
     public class CliprConfigurationSource<T> : IConfigurationSource<T> where T : class, new()
     {

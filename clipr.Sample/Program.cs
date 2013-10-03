@@ -1,6 +1,7 @@
 ﻿using System;
 using SmartConf;
 using SmartConf.Sources;
+using SmartConf.Sources.clipr;
 
 namespace clipr.Sample
 {

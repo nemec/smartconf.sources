@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>smartconf.sources.appsettings</id>
+    <authors>Dan Nemec</authors>
+    <owners>Dan Nemec</owners>
+    <version>0.9.0.0</version>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/nemec/smartconf.sources</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      AppSettings source for smartconf.
+      Visit https://github.com/nemec/smartconf.sources for more information.
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>.net40 config configuration configurationmanager appsettings settings</tags>
+  </metadata>
+</package>

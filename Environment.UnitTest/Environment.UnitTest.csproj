@@ -35,8 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SmartConf">
-      <HintPath>..\packages\SmartConf.1.0.3.0\lib\net35\SmartConf.dll</HintPath>
+    <Reference Include="SmartConf, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\smartconf.1.0.4.0\lib\net35\SmartConf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

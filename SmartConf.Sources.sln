@@ -31,6 +31,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clipr", "clipr\clipr.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clipr.Sample", "clipr.Sample\clipr.Sample.csproj", "{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppSettings", "AppSettings", "{03CA2BC5-1023-444F-92D4-2D31BDBC64DA}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.nuspec = appsettings.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettings", "AppSettings\AppSettings.csproj", "{A20ACC90-409E-4EE1-8A11-601F255AC5A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettings.Sample", "AppSettings.Sample\AppSettings.Sample.csproj", "{FA179673-AFC1-43B1-962A-26E88E04C062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +71,14 @@ Global
 		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20ACC90-409E-4EE1-8A11-601F255AC5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20ACC90-409E-4EE1-8A11-601F255AC5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20ACC90-409E-4EE1-8A11-601F255AC5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20ACC90-409E-4EE1-8A11-601F255AC5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA179673-AFC1-43B1-962A-26E88E04C062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA179673-AFC1-43B1-962A-26E88E04C062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA179673-AFC1-43B1-962A-26E88E04C062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA179673-AFC1-43B1-962A-26E88E04C062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +90,7 @@ Global
 		{0A3F32C0-D76A-4BDB-BCEA-5EFCE1F02FE0} = {56BB2C00-F9DC-400D-B215-ED3CCA37BCA0}
 		{0CEC9AC2-FA2B-4218-B48C-4C51B326BAED} = {5DE26C0C-CAD5-47D6-BB38-2EB2D43C12B5}
 		{C61CE448-DB3E-4F07-8BC4-ED1DF106D133} = {5DE26C0C-CAD5-47D6-BB38-2EB2D43C12B5}
+		{A20ACC90-409E-4EE1-8A11-601F255AC5A4} = {03CA2BC5-1023-444F-92D4-2D31BDBC64DA}
+		{FA179673-AFC1-43B1-962A-26E88E04C062} = {03CA2BC5-1023-444F-92D4-2D31BDBC64DA}
 	EndGlobalSection
 EndGlobal
