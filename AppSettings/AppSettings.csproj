@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppSettingsConfigurationSource.cs" />
+    <Compile Include="BasicConfigurationOptions.cs" />
+    <Compile Include="IConfigurationOptions.cs" />
     <Compile Include="ConfigurationPropertyAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

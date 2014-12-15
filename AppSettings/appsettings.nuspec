@@ -4,7 +4,7 @@
     <id>smartconf.sources.appsettings</id>
     <authors>Dan Nemec</authors>
     <owners>Dan Nemec</owners>
-    <version>0.9.0.0</version>
+    <version>0.9.1.0</version>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <projectUrl>https://github.com/nemec/smartconf.sources</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +14,7 @@
     </description>
     <releaseNotes>
     </releaseNotes>
-    <copyright>Copyright 2013</copyright>
+    <copyright>Copyright 2014</copyright>
     <tags>.net40 config configuration configurationmanager appsettings settings</tags>
   </metadata>
 </package>

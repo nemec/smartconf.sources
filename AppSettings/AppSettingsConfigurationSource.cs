@@ -10,16 +10,25 @@ namespace SmartConf.Sources.AppSettings
         public T Config { get; private set; }
 
         public AppSettingsConfigurationSource()
+            : this(new BasicConfigurationOptions())
+        {
+        }
+
+        public AppSettingsConfigurationSource(IConfigurationOptions options)
         {
             Config = new T();
             var props = typeof (T).GetProperties();
             foreach (var prop in props)
             {
-                var name = ToCamelCase(prop.Name);
+                string name;
                 var attrs = prop.GetCustomAttributes(typeof (ConfigurationPropertyAttribute), true);
                 if (attrs.Length == 1)
                 {
                     name = ((ConfigurationPropertyAttribute) attrs[0]).Name;
+                }
+                else
+                {
+                    name = options.ConvertPropertyNameToAppSettingsName(prop.Name);
                 }
 
                 var converted = TypeDescriptor
@@ -28,16 +37,6 @@ namespace SmartConf.Sources.AppSettings
                         ConfigurationManager.AppSettings[name]);
                 prop.SetValue(Config, converted, null);
             }
-        }
-
-        private static string ToCamelCase(string s)
-        {
-            if (String.IsNullOrEmpty(s))
-            {
-                return s;
-            }
-            var fst = Char.ToLowerInvariant(s[0]);
-            return fst + s.Substring(1, s.Length - 1);
         }
 
         /// <inheritdoc />
